@@ -1,0 +1,3 @@
+select up.firstname,up.lastname, up.countrycode, ct.countryname
+>from USERPROFILE up
+>left join COUNTRYTABLE ct on ct.countrycode=up.countrycode emit changes;
